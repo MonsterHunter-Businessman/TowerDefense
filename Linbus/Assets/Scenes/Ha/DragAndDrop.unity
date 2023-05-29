@@ -1081,9 +1081,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1215779115}
   - component: {fileID: 1215779119}
-  - component: {fileID: 1215779118}
   - component: {fileID: 1215779117}
   - component: {fileID: 1215779116}
+  - component: {fileID: 1215779120}
   m_Layer: 0
   m_Name: M2
   m_TagString: Test_Monster
@@ -1099,7 +1099,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1215779114}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.516021, y: -1.9112554, z: 23.555216}
+  m_LocalPosition: {x: 6, y: -1, z: 23.555216}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -1143,29 +1143,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.0001
---- !u!114 &1215779118
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1215779114}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aae033d2aa31e834b9ee0488eab91824, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  monster: {fileID: 1215779115}
-  pathsystem: 1
-  pathmode: 0
-  resulution: 10
-  gizmoColor: {r: 1, g: 0, b: 0, a: 1}
-  pathval:
-  - {x: 6, y: -1, z: 0}
-  - {x: -8, y: -1, z: 0}
-  speed: 5
-  lateTime: 6
-  health: 5
 --- !u!212 &1215779119
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1218,6 +1195,29 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1215779120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1215779114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e634c3720d2cbfc4c8d79f9c9d3df4ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  monster: {fileID: 1215779115}
+  pathsystem: 1
+  pathmode: 0
+  resulution: 10
+  gizmoColor: {r: 1, g: 0, b: 0, a: 1}
+  pathval:
+  - {x: 6, y: -1, z: 0}
+  - {x: -6, y: -1, z: 0}
+  speed: 10
+  lateTime: 4
+  health: 5
 --- !u!1 &1232035344
 GameObject:
   m_ObjectHideFlags: 0
@@ -1298,7 +1298,7 @@ GameObject:
   - component: {fileID: 1272359341}
   - component: {fileID: 1272359340}
   - component: {fileID: 1272359344}
-  - component: {fileID: 1272359346}
+  - component: {fileID: 1272359345}
   m_Layer: 0
   m_Name: Test_Tower
   m_TagString: Tower
@@ -1422,7 +1422,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &1272359346
+--- !u!114 &1272359345
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1431,11 +1431,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1272359339}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a3cf46de01755a8498094228c84ba3b6, type: 3}
+  m_Script: {fileID: 11500000, guid: 3ec3d0c2f101b804e9caf5a07a29c897, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EAsports: {x: 6, y: 6, z: 6}
-  Nintendo: {x: 0, y: 0, z: 0}
+  EAsports: {x: 0, y: 0, z: 0}
   target: {fileID: 0}
   partToRotate: {fileID: 1272359342}
   Pokemon: 0
@@ -1446,9 +1445,9 @@ MonoBehaviour:
   yes: 0
   fireRate: 1
   fireCountdown: 0
-  bulletPrefab: {fileID: 7700668241317537915, guid: 602445bc5f1c04e4493dd3da5ae28825, type: 3}
+  bulletPrefab: {fileID: 7700668241317537915, guid: c2c41236c244cb04e8a211e63edbed26, type: 3}
   firePoint: {fileID: 976167002}
-  TXT: {fileID: 0}
+  TXT: {fileID: 1934722797}
   health: 10
 --- !u!1 &1349508088
 GameObject:
@@ -2090,7 +2089,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -480.755, y: -136.44751}
+  m_AnchoredPosition: {x: -480.75507, y: -136.44751}
   m_SizeDelta: {x: -1481.5099, y: -887.105}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1934722799
@@ -2239,7 +2238,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2097067632}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.5160208, y: 0.9112554, z: -23.555216}
+  m_LocalPosition: {x: 0, y: 0, z: -23.555216}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2384,29 +2383,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &153029956259969832
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 153029956259969838}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aae033d2aa31e834b9ee0488eab91824, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  monster: {fileID: 153029956259969833}
-  pathsystem: 1
-  pathmode: 0
-  resulution: 10
-  gizmoColor: {r: 1, g: 0, b: 0, a: 1}
-  pathval:
-  - {x: 6, y: -1, z: 0}
-  - {x: -8, y: -1, z: 0}
-  speed: 5
-  lateTime: 5
-  health: 5
 --- !u!4 &153029956259969833
 Transform:
   m_ObjectHideFlags: 0
@@ -2415,7 +2391,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 153029956259969838}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.516021, y: -1.9112554, z: 23.555216}
+  m_LocalPosition: {x: 6, y: -1, z: 23.555216}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -2500,9 +2476,9 @@ GameObject:
   m_Component:
   - component: {fileID: 153029956259969833}
   - component: {fileID: 153029956259969835}
-  - component: {fileID: 153029956259969832}
   - component: {fileID: 153029956259969834}
   - component: {fileID: 153029956259969845}
+  - component: {fileID: 153029956259969846}
   m_Layer: 0
   m_Name: M1
   m_TagString: Test_Monster
@@ -2531,3 +2507,26 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &153029956259969846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 153029956259969838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e634c3720d2cbfc4c8d79f9c9d3df4ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  monster: {fileID: 153029956259969833}
+  pathsystem: 1
+  pathmode: 0
+  resulution: 10
+  gizmoColor: {r: 1, g: 0, b: 0, a: 1}
+  pathval:
+  - {x: 6, y: -1, z: 0}
+  - {x: -6, y: -1, z: 0}
+  speed: 10
+  lateTime: 2
+  health: 5
