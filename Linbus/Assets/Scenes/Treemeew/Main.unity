@@ -268,9 +268,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 24726348}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2d04239a66c674408cfe21418b70a88, type: 3}
+  m_Script: {fileID: 11500000, guid: 16bc7b2b81337d644bdae5a6d4608258, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tmp: {fileID: 24726350}
 --- !u!1 &67923923
 GameObject:
   m_ObjectHideFlags: 0
@@ -329,7 +330,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a66d2eea314c20b4ab16effda681bdeb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9a8890d49d054c040aab4496b5c48a7d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1547,7 +1548,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c498e8234c8d7964d91ea80a0211658d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5508b759e5cb4b94daf610c9fab69751, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1692,7 +1693,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 05ffb104ea9ed9c41a6534b735780fd0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: caf91a3261f279d4ab5a1b250baee136, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1873,7 +1874,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7d68df4d28eb7b045b6402ccf8080130, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2a832d7f165c9bd45ab494e34924d059, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2317,7 +2318,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: afe4a793ffe4d0b4cb7bf9bd032b1371, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 12a535249d875c64491d12a35c0a9a91, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2905,7 +2906,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\uAD6C\uB9E4\n"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4f010c1fb7c63544e91aae98ac172591, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 31d7be2bcc8045146a5cdb8b4da4b14a, type: 2}
   m_sharedMaterial: {fileID: -450129438692785533, guid: 4f010c1fb7c63544e91aae98ac172591, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -2969,7 +2970,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &873549360
@@ -3223,7 +3224,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b5f95d02947db5d4c86f501496c27cf6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bf52d03b44f3a70488b02b1eeae9cb73, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3876,9 +3877,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1164470370}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7dc2b2f916057e147893f78438b8d2d4, type: 3}
+  m_Script: {fileID: 11500000, guid: 44d917c5c5b81374eaafba57f62bab53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Popup: {fileID: 0}
+  Panel: {fileID: 0}
+  Currenttype: 2
+  userLv: 0
+  shopGo: {fileID: 0}
 --- !u!114 &1164470372
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3955,7 +3961,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7a91bceb0fd52f64e9c4a887e3112de8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 18c5b0c0bff45e64f9ed177aed145e6b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4547,7 +4553,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: cd0ce5a1ae37fb64abeb15d306e350c5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 728e61472d9263a48944c73f6f33a034, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4873,7 +4879,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7d68df4d28eb7b045b6402ccf8080130, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2a832d7f165c9bd45ab494e34924d059, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4969,7 +4975,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a66d2eea314c20b4ab16effda681bdeb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9a8890d49d054c040aab4496b5c48a7d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5254,7 +5260,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: cd0ce5a1ae37fb64abeb15d306e350c5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 728e61472d9263a48944c73f6f33a034, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6060,7 +6066,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b5f95d02947db5d4c86f501496c27cf6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bf52d03b44f3a70488b02b1eeae9cb73, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6147,9 +6153,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1966441681}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7dc2b2f916057e147893f78438b8d2d4, type: 3}
+  m_Script: {fileID: 11500000, guid: 44d917c5c5b81374eaafba57f62bab53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Popup: {fileID: 0}
+  Panel: {fileID: 0}
+  Currenttype: 2
+  userLv: 0
+  shopGo: {fileID: 0}
 --- !u!114 &1966441684
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6226,7 +6237,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7a91bceb0fd52f64e9c4a887e3112de8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 18c5b0c0bff45e64f9ed177aed145e6b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

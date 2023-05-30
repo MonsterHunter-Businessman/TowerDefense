@@ -10,6 +10,7 @@ public enum Btntype
     None,
     Start,
     Quit,
+    accept,
     Buy,
     CardUp,
     CardDown
@@ -61,6 +62,10 @@ public class BtnManager : MonoBehaviour
             case Btntype.Quit:
                 Debug.Log("종료합니다");
                 Application.Quit();
+                break;
+
+            case Btntype.accept:
+
                 break;
 
             case Btntype.Buy:
