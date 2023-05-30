@@ -22,8 +22,6 @@ public class BtnManager : MonoBehaviour
     public static int GameMoney;
 
     public Btntype Currenttype;
-    public int userLv;
-    public GameObject shopGo;
     Transform cardTF;
 
     Cards card;
@@ -34,9 +32,8 @@ public class BtnManager : MonoBehaviour
         //card = transform.Find("Shop/Card").GetComponent<Cards>();
         //Debug.Log("card info = "+card);
 
-
+        
         GameMoney = 999;
-        userLv = 1;
         //Popup.SetActive(false);
     }
 
@@ -69,21 +66,20 @@ public class BtnManager : MonoBehaviour
                 break;
 
             case Btntype.Buy:
-                Debug.Log("Cards.CardIndex = "+ Cards.CardIndex);
+                //Debug.Log("Cards.CardIndex = "+ card.hasCard[Cards.CardIndex]);
 
                 if (GameMoney - Cards.CardPrice < 0)
                 {
                     Popup.SetActive(true);
                 }
-                else if (card.hasCard[Cards.CardIndex] > 1)
+               /* else if (card.hasCard[Cards.CardIndex] >=1)
                 {
                     Popup.SetActive(true);
-                }
+                }*/
                 else if (GameMoney - Cards.CardPrice >= 0)
                 {
                     Debug.Log("구매성공");
                     GameMoney -= Cards.CardPrice;
-                    card.hasCard[Cards.CardIndex] += 1;
                 }
                 break;
 
