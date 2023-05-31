@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
-
 public enum Btntype
 {
     None,
@@ -15,38 +14,28 @@ public enum Btntype
     CardUp,
     CardDown
 }
+
 public class BtnManager : MonoBehaviour
 {
-    
     public GameObject Popup;
     public GameObject Panel;
-   
-
     public Btntype Currenttype;
-    Transform cardTF;
+    public Cards card;
 
-    Cards card;
-
-    // Start is called before the first frame update
     void Start()
     {
-        //card = transform.Find("Shop/Card").GetComponent<Cards>();
-        //Debug.Log("card info = "+card);
-
-        
-        //Popup.SetActive(false);
+        // Popup.SetActive(false);
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if (SceneManager.GetActiveScene().name == "StartPage"&&Input.GetMouseButtonDown(0))
+        if (SceneManager.GetActiveScene().name == "StartPage" && Input.GetMouseButtonDown(0))
         {
             Debug.Log("시작화면임ㅇㅇ");
             SceneLoad.LoadScene("Main");
         }
-
     }
+
     public void OnBtnClick()
     {
         switch (Currenttype)
@@ -62,24 +51,27 @@ public class BtnManager : MonoBehaviour
                 break;
 
             case Btntype.accept:
-
                 break;
 
             case Btntype.Buy:
-                //Debug.Log("Cards.CardIndex = "+ card.hasCard[Cards.CardIndex]);
+                int cardIndex = (int)card.TowerCard;
 
-                if (GameDataManager.Instance.GameMoney - Cards.CardPrice < 0)
+                if (GameDataManager.Instance.GameMoney < Cards.CardPrice)
                 {
                     Popup.SetActive(true);
+                    Debug.Log("돈이 부족하여 구매할 수 없습니다.");
                 }
-               /* else if (card.hasCard[Cards.CardIndex] >=1)
+                else if (card.hasCard[cardIndex] == 0)
+                {
+                    Debug.Log("구매 성공");
+                    GameDataManager.Instance.GameMoney -= Cards.CardPrice;
+                    card.hasCard[cardIndex] = 1;
+                    Debug.Log(card.CardNametxt + " 카드를 구매했습니다.");
+                }
+                else
                 {
                     Popup.SetActive(true);
-                }*/
-                else if (GameDataManager.Instance.GameMoney - Cards.CardPrice >= 0)
-                {
-                    Debug.Log("구매성공");
-                    GameDataManager.Instance.GameMoney -= Cards.CardPrice;
+                    Debug.Log(card.CardNametxt + " 카드를 이미 보유 중입니다.");
                 }
                 break;
 
@@ -104,5 +96,4 @@ public class BtnManager : MonoBehaviour
                 break;
         }
     }
-    
 }

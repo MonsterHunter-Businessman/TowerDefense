@@ -32,7 +32,7 @@ public class Cards : MonoBehaviour
     void Start()
     {
         CardIndex = 0;
-        hasCard = new int[((int)TowerCard)];
+        hasCard = new int[((int)TowerCards.darkmagician) + 1];
     }
 
 
@@ -41,7 +41,6 @@ public class Cards : MonoBehaviour
         mercenaryType();
         Cardname.text = CardNametxt;
         Carddescription.text = CardInfo;
-      
     }
     public void mercenaryType()
     {
@@ -86,4 +85,6 @@ public class Cards : MonoBehaviour
             TowerCard = TowerCards.none;
         }
     }
+
 }
+
