@@ -9,8 +9,10 @@ public enum TowerCards
 {
     none,
     nun,
-    Assassin,
-    spear
+    assassin,
+    spear,
+    berserker,
+    darkmagician
 }
 
 public class Cards : MonoBehaviour
@@ -52,7 +54,7 @@ public class Cards : MonoBehaviour
                 CardPrice = 200;
                 CardDmg = 7;
                 break;
-            case TowerCards.Assassin:
+            case TowerCards.assassin:
                 CardNametxt = "암살자";
                 CardInfo = " 상대에게 공격을 받지 않습니다.적을 단일 공격합니다";
                 CardImage.GetComponent<Image>().sprite = Resources.Load<Sprite>("Img/Treemeew/assassin");
@@ -73,7 +75,7 @@ public class Cards : MonoBehaviour
         }
         if (CardIndex == 1)
         {
-            TowerCard = TowerCards.Assassin;
+            TowerCard = TowerCards.assassin;
         }
         if (CardIndex == 2)
         {

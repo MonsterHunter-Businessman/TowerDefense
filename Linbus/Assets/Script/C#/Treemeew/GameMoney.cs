@@ -15,6 +15,6 @@ public class GameMoney : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Tmp.text = BtnManager.GameMoney.ToString();
+        Tmp.text = GameDataManager.Instance.GameMoney.ToString();
     }
 }

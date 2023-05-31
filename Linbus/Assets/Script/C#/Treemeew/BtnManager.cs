@@ -17,9 +17,10 @@ public enum Btntype
 }
 public class BtnManager : MonoBehaviour
 {
+    
     public GameObject Popup;
     public GameObject Panel;
-    public static int GameMoney;
+   
 
     public Btntype Currenttype;
     Transform cardTF;
@@ -33,7 +34,6 @@ public class BtnManager : MonoBehaviour
         //Debug.Log("card info = "+card);
 
         
-        GameMoney = 999;
         //Popup.SetActive(false);
     }
 
@@ -68,7 +68,7 @@ public class BtnManager : MonoBehaviour
             case Btntype.Buy:
                 //Debug.Log("Cards.CardIndex = "+ card.hasCard[Cards.CardIndex]);
 
-                if (GameMoney - Cards.CardPrice < 0)
+                if (GameDataManager.Instance.GameMoney - Cards.CardPrice < 0)
                 {
                     Popup.SetActive(true);
                 }
@@ -76,10 +76,10 @@ public class BtnManager : MonoBehaviour
                 {
                     Popup.SetActive(true);
                 }*/
-                else if (GameMoney - Cards.CardPrice >= 0)
+                else if (GameDataManager.Instance.GameMoney - Cards.CardPrice >= 0)
                 {
                     Debug.Log("구매성공");
-                    GameMoney -= Cards.CardPrice;
+                    GameDataManager.Instance.GameMoney -= Cards.CardPrice;
                 }
                 break;
 
