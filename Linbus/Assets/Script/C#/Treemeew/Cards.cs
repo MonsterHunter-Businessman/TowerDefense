@@ -17,24 +17,22 @@ public enum TowerCards
 
 public class Cards : MonoBehaviour
 {
+    public int CardIndex;
     public TextMeshProUGUI Cardname;
     public TextMeshProUGUI Carddescription;
     public TowerCards TowerCard;
     public static int CardDmg;
-    public static int CardIndex;
     public string CardNametxt;
     public string CardInfo;
     Button Button;
     public static int CardPrice;
     public GameObject CardImage;
-    public int[] hasCard;
+    public bool[] hasCard; // 수정된 부분: 배열을 bool 타입으로 변경
 
-    void Start()
+    private void Start()
     {
-        CardIndex = 0;
-        hasCard = new int[((int)TowerCards.darkmagician) + 1];
+        hasCard = new bool[System.Enum.GetValues(typeof(TowerCards)).Length];
     }
-
 
     void Update()
     {    
@@ -44,6 +42,21 @@ public class Cards : MonoBehaviour
     }
     public void mercenaryType()
     {
+        switch (CardIndex)
+        {
+            case 0:
+                TowerCard = TowerCards.nun;
+                break;
+            case 1:
+                TowerCard = TowerCards.assassin;
+                break;
+            case 2:
+                TowerCard = TowerCards.spear;
+                break;
+            default:
+                TowerCard = TowerCards.none;
+                break;
+        }
         switch (TowerCard)
         {
             case TowerCards.nun:
@@ -68,22 +81,7 @@ public class Cards : MonoBehaviour
                 CardDmg = 10;
                 break;
         }
-        if (CardIndex == 0)
-        {
-            TowerCard = TowerCards.nun;
-        }
-        if (CardIndex == 1)
-        {
-            TowerCard = TowerCards.assassin;
-        }
-        if (CardIndex == 2)
-        {
-            TowerCard = TowerCards.spear;
-        }
-        if(CardIndex == 3)
-        {
-            TowerCard = TowerCards.none;
-        }
+  
     }
 
 }
