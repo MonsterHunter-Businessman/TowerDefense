@@ -22,6 +22,8 @@ public class BtnManager : MonoBehaviour
     public Btntype Currenttype;
     public Cards card;
 
+    int cardIndex = (int)card.TowerCard;
+
     void Start()
     {
         // Popup.SetActive(false);
@@ -29,11 +31,19 @@ public class BtnManager : MonoBehaviour
 
     void Update()
     {
+
         if (SceneManager.GetActiveScene().name == "StartPage" && Input.GetMouseButtonDown(0))
         {
             Debug.Log("시작화면임ㅇㅇ");
             SceneLoad.LoadScene("Main");
         }
+
+        if (card.hasCard[cardIndex] != 0)
+        {
+            Panel.SetActive(true);
+        }
+        else
+            Panel.SetActive(false);
     }
 
     public void OnBtnClick()
@@ -54,7 +64,7 @@ public class BtnManager : MonoBehaviour
                 break;
 
             case Btntype.Buy:
-                int cardIndex = (int)card.TowerCard;
+                
 
                 if (GameDataManager.Instance.GameMoney < Cards.CardPrice)
                 {
