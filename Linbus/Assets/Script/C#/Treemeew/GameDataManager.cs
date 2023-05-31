@@ -9,6 +9,8 @@ public class GameDataManager : MonoBehaviour
 
     public int PlayerLv;
     public float PlayerExp;
+
+
     // 아직 별거없으니 지워도됨
     void Start()
     {

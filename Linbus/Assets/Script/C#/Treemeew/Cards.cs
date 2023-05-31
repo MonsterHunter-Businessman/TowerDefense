@@ -48,7 +48,7 @@ public class Cards : MonoBehaviour
             case TowerCards.nun:
                 CardNametxt = "사제";
                 CardInfo = " 10초마다 아군의 체력을 5회복 합니다.적을 단일 공격합니다.";
-                CardImage.GetComponent<Image>().sprite = Resources.Load<Sprite>("Img/Treemeew/nunImg");
+                CardImage.GetComponent<Image>().sprite = Resources.Load<Sprite>("Img/Treemeew/nun");
                 CardPrice = 200;
                 CardDmg = 7;
                 break;
