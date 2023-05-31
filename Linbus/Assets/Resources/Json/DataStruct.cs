@@ -18,8 +18,9 @@ public struct Enemy
     public int SkillRange; //적 스킬 범위
     public int SkillAtt; //스킬 공격력
     public int Speed; //적의 이동 속도
+    public string ImgPath; //적의 이미지 경로
 
-    public Enemy(string Name, int Hp, int AttTower, int AttCastle, int DmgResist, bool Tag, string Rarity, string info, int AttRangeX, int AttRangeZ, int AttObj, int Cooldown, string SkillInfo, int SkillAtt, int SkillRange, int Speed, int AttSpeed)
+    public Enemy(string Name, int Hp, int AttTower, int AttCastle, int DmgResist, bool Tag, string Rarity, string info, int AttRangeX, int AttRangeZ, int AttObj, int Cooldown, string SkillInfo, int SkillAtt, int SkillRange, int Speed, int AttSpeed, string ImgPath)
     {
         this.Name = Name;
         this.Hp = Hp;
@@ -38,6 +39,7 @@ public struct Enemy
         this.SkillRange = SkillRange;
         this.Speed = Speed;
         this.SkillAtt = SkillAtt;
+        this.ImgPath = ImgPath;
     }
 }
 
@@ -61,8 +63,9 @@ public struct Tower
     public int SkillRangeZ; //적 스킬 Z 범위
     public int SkillAtt; //타워 스킬 공격력
     public string SkillInfo; //타워 스킬 설명
+    public string ImgPath; //타워 이미지 경로
 
-    public Tower(string Name, int Hp, int Att, int DmgResist, string Rarity, bool Tag, string Skill, string Info, int AttRangeX, int AttRangeZ, int AttObj, int AttSpeed, int Cooldown, int SkillRangeX, int SkillRangeZ, int SkillAtt, string SkillInfo)
+    public Tower(string Name, int Hp, int Att, int DmgResist, string Rarity, bool Tag, string Skill, string Info, int AttRangeX, int AttRangeZ, int AttObj, int AttSpeed, int Cooldown, int SkillRangeX, int SkillRangeZ, int SkillAtt, string SkillInfo, string ImgPath)
     {
         this.Name = Name;
         this.Hp = Hp;
@@ -80,7 +83,8 @@ public struct Tower
         this.SkillRangeZ = SkillRangeZ;
         this.SkillRangeX = SkillRangeX;
         this.SkillAtt = SkillAtt;
-        this.SkillInfo = Info;
+        this.SkillInfo = SkillInfo;
+        this.ImgPath = ImgPath;
     }
 }
 
@@ -91,13 +95,15 @@ public struct Support
     public string Info; //지원카드의 설명 : ex) 성을 수리해, 성이 5hp를 회복합니다.
     public int AttRange; //지원카드 공격범위
     public int Att; //지원카드 공격력
+    public string ImgPath; //지원카드 이미지 경로
 
-    public Support(string Nmae, string Info, int AttRange, int Att)
+    public Support(string Nmae, string Info, int AttRange, int Att, string ImgPath)
     {
         this.Name = Nmae;
         this.Info = Info;
         this.AttRange = AttRange;
         this.Att = Att;
+        this.ImgPath = ImgPath;
     }
 }
 
