@@ -27,11 +27,11 @@ public class Cards : MonoBehaviour
     Button Button;
     public static int CardPrice;
     public GameObject CardImage;
-    public bool[] hasCard; // 수정된 부분: 배열을 bool 타입으로 변경
+    public int[] hasCard; // 수정된 부분: 배열을 bool 타입으로 변경
 
     private void Start()
     {
-        hasCard = new bool[System.Enum.GetValues(typeof(TowerCards)).Length];
+        hasCard = new int[System.Enum.GetValues(typeof(TowerCards)).Length];
     }
 
     void Update()
