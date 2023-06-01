@@ -15,7 +15,7 @@ public class Test_Monster : MonoBehaviour
     public int resulution = 10;
     public Color gizmoColor = Color.red;
 
-    public Vector3[] pathval = new Vector3[0];
+    public Vector3[] pathval;
 
     public float speed = 10;
 
@@ -25,6 +25,9 @@ public class Test_Monster : MonoBehaviour
 
     // Start is called before the first frame update
     void Start() {
+
+
+
         gameObject.SetActive(false);
         Invoke("Move", lateTime);
     }
@@ -58,3 +61,5 @@ public class Test_Monster : MonoBehaviour
     }
 
 }
+
+//GameObject.Find("스크립트를 포함하는 오브젝트이름").GetComponent<스크립트 이름>().변수
