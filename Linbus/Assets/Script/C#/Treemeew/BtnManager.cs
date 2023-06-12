@@ -81,14 +81,12 @@ public class BtnManager : MonoBehaviour
                 {
                     Debug.Log("구매 성공");
                     GameDataManager.Instance.GameMoney -= Cards.CardPrice;
-                    card.hasCard[cardIndex] += 1;
+                    Debug.Log(card.CardIndex);
                     card.hasCard[card.CardIndex] += 1;
                     Debug.Log(card.CardNametxt + " 카드를 구매했습니다.");
-
                 }
                 else
                 {
-
                     Debug.Log(card.CardNametxt + " 카드를 이미 보유 중입니다.");
                 }
                 break;

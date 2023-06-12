@@ -5,8 +5,6 @@ using UnityEngine.UI;
 using TMPro;
 public class PlayerInfo : MonoBehaviour
 {
-    public static int PlayerLv;
-    public static float PlayerExp;
     public TMP_InputField PlayerName;
     public TMP_InputField PlayerInfoTxt;
 
