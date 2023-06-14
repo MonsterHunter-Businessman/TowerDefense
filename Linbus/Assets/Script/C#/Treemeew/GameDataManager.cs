@@ -11,12 +11,10 @@ public class GameDataManager : MonoBehaviour
     public float PlayerExp;
     public int GameMoney = 999;
 
-    // 아직 별거없으니 지워도됨
     void Start()
     {
         if (Instance == null) {
             Instance = this;
-            
         }
         else if (Instance != this)
         {
