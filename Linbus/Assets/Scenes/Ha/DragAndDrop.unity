@@ -950,6 +950,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce34b573a6057ae449e11486ed3ea643, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  goblin: {fileID: 0}
+  mS: {fileID: 0}
+  stage: 0
+  monsterB: {fileID: 0}
+  parent: {fileID: 0}
+  stageMonster: 0500000007000000090000000a000000
 --- !u!1 &1165414869
 GameObject:
   m_ObjectHideFlags: 0
@@ -1096,7 +1102,6 @@ GameObject:
   - component: {fileID: 1215779119}
   - component: {fileID: 1215779117}
   - component: {fileID: 1215779116}
-  - component: {fileID: 1215779120}
   m_Layer: 0
   m_Name: M2
   m_TagString: Test_Monster
@@ -1208,29 +1213,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1215779120
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1215779114}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e634c3720d2cbfc4c8d79f9c9d3df4ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  monster: {fileID: 1215779115}
-  pathsystem: 1
-  pathmode: 0
-  resulution: 10
-  gizmoColor: {r: 1, g: 0, b: 0, a: 1}
-  pathval:
-  - {x: 6, y: -1, z: 0}
-  - {x: -6, y: -1, z: 0}
-  speed: 10
-  lateTime: 4
-  health: 5
 --- !u!1 &1232035344
 GameObject:
   m_ObjectHideFlags: 0
@@ -2491,7 +2473,6 @@ GameObject:
   - component: {fileID: 153029956259969835}
   - component: {fileID: 153029956259969834}
   - component: {fileID: 153029956259969845}
-  - component: {fileID: 153029956259969846}
   m_Layer: 0
   m_Name: M1
   m_TagString: Test_Monster
@@ -2520,26 +2501,3 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &153029956259969846
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 153029956259969838}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e634c3720d2cbfc4c8d79f9c9d3df4ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  monster: {fileID: 153029956259969833}
-  pathsystem: 1
-  pathmode: 0
-  resulution: 10
-  gizmoColor: {r: 1, g: 0, b: 0, a: 1}
-  pathval:
-  - {x: 6, y: -1, z: 0}
-  - {x: -6, y: -1, z: 0}
-  speed: 10
-  lateTime: 2
-  health: 5

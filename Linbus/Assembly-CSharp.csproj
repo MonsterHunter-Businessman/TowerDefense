@@ -57,7 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Script\C#\Ha\Tuttey.cs" />
-    <Compile Include="Assets\Script\C#\Ha\Test_Monster.cs" />
+    <Compile Include="Assets\Script\C#\Ha\MonsterGoblin.cs" />
     <Compile Include="Assets\Script\C#\Ha\Bullet.cs" />
     <Compile Include="Assets\Script\C#\Ha\SimplePlayerController.cs" />
     <Compile Include="Assets\Script\C#\Ha\Test_Tower_Txt.cs" />
