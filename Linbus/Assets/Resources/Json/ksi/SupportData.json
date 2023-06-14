@@ -1,0 +1,18 @@
+{
+    "Support": [
+        {
+            "Name": "지원사격",
+            "Info": "적들에게 광역공격을 시전해, 10데미지를 입힙니다.",
+            "AttRange":18,
+            "Att": 10,
+            "ImgPath": "Img/Treemeew/SupportAtt"
+        },
+        {
+            "Name": "물자보급",
+            "Info": "사용한 지원카드 2장을 다시 덱으로 되돌립니다. 그 후, 덱에서 지원카드를 2장 뽑습니다.",
+            "AttRange":0,
+            "Att": 0,
+            "ImgPath": "Img/Treemeew/Supply"
+        }
+    ]
+}
