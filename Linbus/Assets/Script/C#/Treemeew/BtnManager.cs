@@ -34,7 +34,7 @@ public class BtnManager : MonoBehaviour
 
     void Update()
     {
-
+        
         if (SceneManager.GetActiveScene().name == "StartPage" && Input.GetMouseButtonDown(0))
         {
             Debug.Log("시작화면임ㅇㅇ");
@@ -46,8 +46,12 @@ public class BtnManager : MonoBehaviour
             return;
 
         // 보유 중인 카드를 보고 있다면 Panel 활성화
-        bool hasCard = card.hasCard[(int)card.TowerCard] > 0;
+        bool hasCard = card.hasCard[card.CardIndex] > 0;
         Panel.SetActive(hasCard);
+        if (Panel.activeSelf == true)
+        {
+            Popup.SetActive(false);
+        }
     }
 
     public void OnBtnClick()
@@ -77,7 +81,7 @@ public class BtnManager : MonoBehaviour
                     Popup.SetActive(true);
                     Debug.Log("돈이 부족하여 구매할 수 없습니다.");
                 }
-                else if (card.hasCard[cardIndex] == 0)
+                else if (card.hasCard[card.CardIndex] ==0)
                 {
                     Debug.Log("구매 성공");
                     GameDataManager.Instance.GameMoney -= Cards.CardPrice;
@@ -85,7 +89,7 @@ public class BtnManager : MonoBehaviour
                     card.hasCard[card.CardIndex] += 1;
                     Debug.Log(card.CardNametxt + " 카드를 구매했습니다.");
                 }
-                else
+                else if(card.hasCard[card.CardIndex] == 1)
                 {
                     Debug.Log(card.CardNametxt + " 카드를 이미 보유 중입니다.");
                 }
@@ -97,12 +101,11 @@ public class BtnManager : MonoBehaviour
                     return;
                 }
                 Panel.SetActive(false);
-                cardIndex++;
-                card.CardIndex = cardIndex;
+                card.CardIndex++;
                 break;
 
             case Btntype.CardDown:
-                if (card.CardIndex - 1 < 0)
+                if (card.CardIndex - 1 <= 0)
                 {
                     return;
                 }

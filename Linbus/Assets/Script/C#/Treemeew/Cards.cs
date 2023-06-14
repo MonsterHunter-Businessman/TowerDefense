@@ -32,6 +32,7 @@ public class Cards : MonoBehaviour
     private void Start()
     {
         hasCard = new int[System.Enum.GetValues(typeof(TowerCards)).Length];
+        CardIndex = 1;
     }
 
     void Update()
@@ -45,13 +46,19 @@ public class Cards : MonoBehaviour
         switch (CardIndex)
         {
             case 0:
-                TowerCard = TowerCards.nun;
+                TowerCard = TowerCards.none;
                 break;
             case 1:
-                TowerCard = TowerCards.assassin;
+                TowerCard = TowerCards.nun;
                 break;
             case 2:
+                TowerCard = TowerCards.assassin;
+                break;
+            case 3:
                 TowerCard = TowerCards.spear;
+                break;
+            case 4:
+                TowerCard = TowerCards.berserker;
                 break;
             default:
                 TowerCard = TowerCards.none;
@@ -79,6 +86,12 @@ public class Cards : MonoBehaviour
                 CardImage.GetComponent<Image>().sprite = Resources.Load<Sprite>("Img/Treemeew/spear");
                 CardPrice = 500;
                 CardDmg = 10;
+                break;
+            case TowerCards.berserker:
+                CardNametxt = "광전사";
+                CardInfo = "상대의 어그로를 우선으로 먹습니다.적을 단일 공격합니다.";
+                CardImage.GetComponent<Image>().sprite = Resources.Load<Sprite>("Img/Treemeew/berserker");
+                CardPrice = 200;
                 break;
         }
   
