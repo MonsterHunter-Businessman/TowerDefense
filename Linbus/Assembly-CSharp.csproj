@@ -56,6 +56,7 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< Updated upstream
     <Compile Include="Assets\Script\C#\Ha\TXT\PlayerTXT.cs" />
     <Compile Include="Assets\Assets\Ha\2D Forest\Scripts\SpikeTrap.cs" />
     <Compile Include="Assets\Assets\Ha\2D Forest\Scripts\TimedAnimations.cs" />
@@ -75,6 +76,25 @@
     <Compile Include="Assets\Script\C#\Ha\GameManager\Stage.cs" />
     <Compile Include="Assets\Assets\Ha\2D Forest\Scripts\MenuButtons.cs" />
     <Compile Include="Assets\Script\C#\Ha\TestPlayer\WizDemo1.cs" />
+=======
+    <Compile Include="Assets\Script\C#\Ha\Tuttey.cs" />
+    <Compile Include="Assets\Script\C#\Ha\MonsterGoblin.cs" />
+    <Compile Include="Assets\Script\C#\Ha\Bullet.cs" />
+    <Compile Include="Assets\Script\C#\Ha\SimplePlayerController.cs" />
+    <Compile Include="Assets\Script\C#\Ha\Test_Tower_Txt.cs" />
+    <Compile Include="Assets\Script\C#\Ha\Stage.cs" />
+    <Compile Include="Assets\Script\C#\Ha\WizDemo1.cs" />
+    <Compile Include="Assets\Script\C#\Treemeew\GameMoney.cs" />
+    <Compile Include="Assets\Assets\Treemeew\JSON\VectorTemplates.cs" />
+    <Compile Include="Assets\Script\C#\Treemeew\panelManager.cs" />
+    <Compile Include="Assets\Script\C#\Treemeew\SceneLoad.cs" />
+    <Compile Include="Assets\Script\C#\Treemeew\Cards.cs" />
+    <Compile Include="Assets\Assets\Treemeew\JSON\JSONObject.cs" />
+    <Compile Include="Assets\Script\C#\Treemeew\Touch_to_Start.cs" />
+    <Compile Include="Assets\Script\C#\Treemeew\PlayerInfo.cs" />
+    <Compile Include="Assets\Script\C#\Treemeew\BtnManager.cs" />
+    <Compile Include="Assets\Script\C#\Treemeew\GameDataManager.cs" />
+>>>>>>> Stashed changes
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
