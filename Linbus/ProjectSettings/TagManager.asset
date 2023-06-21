@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - DropArea
+  - Tower
+  - Test_Arrow
+  - Test_Monster
+  - TestMonsterA
   layers:
   - Default
   - TransparentFX

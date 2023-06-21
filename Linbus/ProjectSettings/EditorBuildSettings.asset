@@ -5,19 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/Treemeew/StartPage.unity
-    guid: 94d5df2b477173a47b3f4a1259ac6a08
+    path: Assets/Scenes/Ha/TestMap.unity
+    guid: c73fc76b97ec4514d82466679bcd67a8
   - enabled: 1
-    path: Assets/Scenes/Treemeew/LoadingScene.unity
-    guid: 545e3d14a78a21a46aeede97254fc5ec
-  - enabled: 1
-    path: Assets/Scenes/Treemeew/Main.unity
-    guid: abf4b3dbc516a0342bc68f6b9b31d5e0
-  - enabled: 1
-    path: Assets/Scenes/Treemeew/ReadyScene.unity
-    guid: 2d761fa5cf60d0a47ae3ba126973bbb3
+    path: Assets/Scenes/Ha/DragAndDrop.unity
+    guid: 597532ded33d8ac4596226ab36583a9d
   m_configObjects: {}
