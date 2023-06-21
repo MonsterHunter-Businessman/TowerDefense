@@ -16,7 +16,7 @@ public class GameDataManager : MonoBehaviour
 
     public TMP_InputField PlayerName;
     public TMP_InputField PlayerInfoTxt;
-
+    
 
 
     public void PlayerInfoSave()
@@ -45,6 +45,10 @@ public class GameDataManager : MonoBehaviour
             Destroy(gameObject);
         }
         DontDestroyOnLoad(gameObject);
+    }
+    void Update()
+    {
+        PlayerInfoLoad();
     }
 
 }

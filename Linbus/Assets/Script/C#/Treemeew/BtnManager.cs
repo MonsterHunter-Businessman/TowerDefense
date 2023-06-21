@@ -112,6 +112,9 @@ public class BtnManager : MonoBehaviour
                 }
                 card.CardIndex--;
                 break;
+            case Btntype.SaveInfo:
+                GameDataManager.Instance.PlayerInfoSave();
+                break;
 
             case Btntype.None:
                 Debug.Log("Ω««‡«‘");
