@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Tuttey : MonoBehaviour
@@ -38,7 +39,9 @@ public class Tuttey : MonoBehaviour
 
     public int health;
 
+    public bool installation;
 
+    public Transform TowerSp;
 
     void OnDrawGizmosSelected()
     {
@@ -48,11 +51,16 @@ public class Tuttey : MonoBehaviour
 
     void Start() {
 
-        range.SetActive(yes);
+        TXT.SetActive(false);
+        range.SetActive(false);
 
-        InvokeRepeating("UpdateTarget", 0f, 0.5f);
+        TowerSp = transform;
+
+        installation = true;
 
         Pokemon = EAsports.x;
+
+        InvokeRepeating("UpdateTarget", 0f, 0.5f);
     }
 
     void Update() {
@@ -70,8 +78,7 @@ public class Tuttey : MonoBehaviour
         partToRotate.rotation = Quaternion.Euler(0f, 0f, rotation.z);
 
 
-        if (fireCountdown <= 0f)
-        {
+        if (fireCountdown <= 0f) {
             Shoot();
             fireCountdown = 1f / fireRate;
         }
@@ -96,22 +103,17 @@ public class Tuttey : MonoBehaviour
         GameObject nearestEnemy = null;
 
 
-        foreach (GameObject enemy in enemies)
-        {
+        foreach (GameObject enemy in enemies) {
             float distanceToEnemy = Vector2.Distance(transform.position, enemy.transform.position);
-            if (distanceToEnemy < shortestDistance)
-            {
+            if (distanceToEnemy < shortestDistance) {
                 shortestDistance = distanceToEnemy;
                 nearestEnemy = enemy;
             }
         }
 
-        if (nearestEnemy != null && shortestDistance <= Pokemon)
-        {
+        if (nearestEnemy != null && shortestDistance <= Pokemon) {
             target = nearestEnemy.transform;
-        }
-        else
-        {
+        } else {
             target = null;
         }
 
@@ -119,23 +121,57 @@ public class Tuttey : MonoBehaviour
 
     void OnMouseDrag() 
     {
-        gameObject.transform.position = new Vector2(mPosition.x, mPosition.y);
-        range.transform.position = new Vector2(targetPostion.x, targetPostion.y);
+        if (installation) {
 
-        TXT.transform.position = new Vector3(targetPostion.x, targetPostion.y + 0.8f, 0f);
+
+            if (installation) {
+                gameObject.transform.position = new Vector2(mPosition.x, mPosition.y);
+            }
+
+            range.SetActive(true);
+
+            range.transform.position = gameObject.transform.position;
+
+        }
+
     }
 
     void OnMouseUp()
     {
-        transform.position = targetPostion;
-        range.SetActive(yes);
 
-        Debug.Log(yes);
+        if (installation) {
+
+            transform.position = targetPostion;
+
+            range.transform.position = new Vector2(targetPostion.x, targetPostion.y);
+
+            TXT.SetActive(false);
+        }
 
         if (yes) {
             EAsports = new Vector3(6, 6, 6);
+
+            if (installation)
+            {
+                gameObject.tag = "Tower";
+                Pokemon = 6;
+                TXT.SetActive(true);
+            }
+
         }
 
+        //GameObject towerGo = Instantiate(Resources.Load<GameObject>("Prefabs/tower"), target) as GameObject; 
+
+    }
+
+    void OnMouseDown()
+    {
+        if (!installation)
+        {
+            gameObject.tag = "Untagged";
+            Pokemon = 0;
+            TXT.SetActive(false);
+        }
     }
 
     void OnTriggerStay2D(Collider2D col)
@@ -146,7 +182,7 @@ public class Tuttey : MonoBehaviour
             //firePoint = col.transform.position;
 
             yes = true;
-            Debug.Log("충돌 하는중");
+            //Debug.Log(targetPostion);
 
 
         } else {
@@ -154,20 +190,20 @@ public class Tuttey : MonoBehaviour
             yes = false;
             EAsports = new Vector3(0, 0, 0);
 
-            Debug.Log("충돌안하는중");
+            //Debug.Log("충돌안하는중");
             
         }
 
-        if (col.gameObject.tag == "Test_M_Attak") {
+        if (col.gameObject.tag == "TestMonsterA") {
             Debug.Log("타워가 많이 아퍼ㅓㅓㅓ");
             health--;
         }
 
         if (health <= 0) {
-            Debug.Log("타워 관리 안해?");
+            //Debug.Log("타워 관리 안해?");
+            Destroy(range);
             Destroy(gameObject);
         }
 
     }
-
 }
