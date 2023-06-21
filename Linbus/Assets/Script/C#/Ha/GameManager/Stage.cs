@@ -21,31 +21,46 @@ public class Stage : MonoBehaviour
 
     Vector3[] st2 = { new Vector3 { x = 9, y = 0, z = 0 }, new Vector3 { x = 3, y = 0, z = 0 }, new Vector3 { x = 3, y = -1, z = 0 }, new Vector3 { x = 1, y = -1, z = 0 }, new Vector3 { x = 1, y = 0, z = 0 }, new Vector3 { x = -2, y = 0, z = 0 } };
 
+    public float spawnInterval = 2f; // 복제 간격 (초)
+    public int spawnCount = 5;       // 복제할 횟수
+
+    private int spawnCounter;        // 현재 복제한 횟수
 
     void Start()
     {
-        InvokeRepeating("monsterSp", 5f, 2f);
+        StartCoroutine(SpawnGoblins());
     }
 
-    void monsterSp()
+    private IEnumerator SpawnGoblins()
     {
 
         if (stage == 1) {
+            while (spawnCounter < 5) {
+                monsterB = Instantiate(goblin, mS.transform);
 
-            monsterB = Instantiate(goblin, mS.transform);
+                monsterB.transform.parent = parent.transform;
 
-            monsterB.transform.parent = parent.transform;
+                monsterB.GetComponent<MonsterGoblin>().pathval = new Vector3[2];
+                monsterB.GetComponent<MonsterGoblin>().pathval = st1;
 
-            monsterB.GetComponent<MonsterGoblin>().pathval = new Vector3[2];
-            monsterB.GetComponent<MonsterGoblin>().pathval = st1;
+                spawnCounter++;
 
-        } else if (stage == 2) {
-            monsterB = Instantiate(goblin, mS.transform);
+                yield return new WaitForSeconds(spawnInterval);
+            }
+        }
+        else if (stage == 2) {
+            while (spawnCounter < 7) {
+                monsterB = Instantiate(goblin, mS.transform);
 
-            monsterB.transform.parent = parent.transform;
+                monsterB.transform.parent = parent.transform;
 
-            monsterB.GetComponent<MonsterGoblin>().pathval = new Vector3[6];
-            monsterB.GetComponent<MonsterGoblin>().pathval = st2;
+                monsterB.GetComponent<MonsterGoblin>().pathval = new Vector3[6];
+                monsterB.GetComponent<MonsterGoblin>().pathval = st2;
+
+                spawnCounter++;
+
+                yield return new WaitForSeconds(spawnInterval);
+            }
         }
 
         

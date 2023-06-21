@@ -56,11 +56,11 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Assets\Treemeew\JSON\Editor\JSONObjectVectorTemplateTests.cs" />
     <Compile Include="Assets\Assets\Treemeew\JSON\Editor\JSONChecker.cs" />
-    <Compile Include="Assets\Assets\Treemeew\JSON\Editor\JSONObjectAsyncTests.cs" />
-    <Compile Include="Assets\Assets\Treemeew\JSON\Editor\JSONObjectTests.cs" />
     <Compile Include="Assets\Assets\Treemeew\JSON\Editor\JSONObjectTestStrings.cs" />
+    <Compile Include="Assets\Assets\Treemeew\JSON\Editor\JSONObjectAsyncTests.cs" />
+    <Compile Include="Assets\Assets\Treemeew\JSON\Editor\JSONObjectVectorTemplateTests.cs" />
+    <Compile Include="Assets\Assets\Treemeew\JSON\Editor\JSONObjectTests.cs" />
     <Compile Include="Assets\Assets\Treemeew\JSON\Editor\JSONObjectEnumeratorTests.cs" />
   </ItemGroup>
   <ItemGroup>
