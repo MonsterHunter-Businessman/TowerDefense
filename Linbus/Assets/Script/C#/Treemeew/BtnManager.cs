@@ -12,7 +12,8 @@ public enum Btntype
     accept,
     Buy,
     CardUp,
-    CardDown
+    CardDown,
+    SaveInfo
 }
 
 public class BtnManager : MonoBehaviour

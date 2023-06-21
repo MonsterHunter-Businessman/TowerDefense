@@ -17,7 +17,7 @@ public class Stage : MonoBehaviour
 
     public int[] stageMonster = new int[] {5, 7, 9, 10};
 
-    Vector3[] st1 = { new Vector3 { x = 7, y = 0, z = 0 }, new Vector3 { x = 0, y = 0, z = 0}, new Vector3 { x = -7, y = 0, z = 0 } };
+    Vector3[] st1 = { new Vector3 { x = 10.24f, y = 0, z = 0 }, new Vector3 { x = 5.12f, y = 0, z = 0}, new Vector3 { x = 0, y = 5.12f, z = 0 },new Vector3 { x = -5.12f, y=0, z=0}, new Vector3 { x = -10.24f, y = 2.56f, z = 0 }, new Vector3 { x = -7.68f, y = 5.12f, z = 0 } };
 
     Vector3[] st2 = { new Vector3 { x = 9, y = 0, z = 0 }, new Vector3 { x = 3, y = 0, z = 0 }, new Vector3 { x = 3, y = -1, z = 0 }, new Vector3 { x = 1, y = -1, z = 0 }, new Vector3 { x = 1, y = 0, z = 0 }};
 
@@ -36,7 +36,7 @@ public class Stage : MonoBehaviour
 
             monsterB.transform.parent = parent.transform;
 
-            monsterB.GetComponent<MonsterGoblin>().pathval = new Vector3[2];
+            monsterB.GetComponent<MonsterGoblin>().pathval = new Vector3[4];
             monsterB.GetComponent<MonsterGoblin>().pathval = st1;
 
         }
