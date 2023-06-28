@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Linbus/Assets/Assets/Ha/Sprites/fence_1.png.meta
+guid: 87298430a014c6d41bc22c863d2d63e6
+=======
 guid: 430f39885be6b6745859a07a566a6593
+>>>>>>> main:Linbus/Assets/Assets/Ha/Map/Sprites/fence_1.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}

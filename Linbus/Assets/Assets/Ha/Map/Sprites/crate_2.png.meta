@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Linbus/Assets/Assets/Ha/Sprites/crate_2.png.meta
+guid: 9090042097fd9284dbac07695b3e2d97
+=======
 guid: ebd8605109dd51c49912ecf44076b5a1
+>>>>>>> main:Linbus/Assets/Assets/Ha/Map/Sprites/crate_2.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}

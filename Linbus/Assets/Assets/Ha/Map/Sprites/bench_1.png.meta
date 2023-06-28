@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Linbus/Assets/Assets/Ha/Sprites/bench_1.png.meta
+guid: dfe93288af611b649946044b2894113b
+=======
 guid: 5a51069802f804248861de612002d2f6
+>>>>>>> main:Linbus/Assets/Assets/Ha/Map/Sprites/bench_1.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}

@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Linbus/Assets/Assets/Ha/Sprites/bucket_1.png.meta
+guid: 0ee7eea272277b8448ff798bd4e1dac5
+=======
 guid: febb521fa68f9084a902e24367d5305a
+>>>>>>> main:Linbus/Assets/Assets/Ha/Map/Sprites/bucket_1.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}

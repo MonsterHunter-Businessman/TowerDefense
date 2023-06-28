@@ -12,7 +12,8 @@ public enum Btntype
     accept,
     Buy,
     CardUp,
-    CardDown
+    CardDown,
+    SaveInfo
 }
 
 public class BtnManager : MonoBehaviour
@@ -110,6 +111,9 @@ public class BtnManager : MonoBehaviour
                     return;
                 }
                 card.CardIndex--;
+                break;
+            case Btntype.SaveInfo:
+                GameDataManager.Instance.PlayerInfoSave();
                 break;
 
             case Btntype.None:

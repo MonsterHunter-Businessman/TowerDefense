@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Linbus/Assets/Assets/Ha/Sprites/stool.png.meta
+guid: 5db7fce1068f93142b90a4a5df578248
+=======
 guid: dc06599fe382ea54db0e25a350e66488
+>>>>>>> main:Linbus/Assets/Assets/Ha/Map/Sprites/stool.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
