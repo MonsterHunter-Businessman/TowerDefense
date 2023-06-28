@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Linbus/Assets/Assets/Ha/Sprites/knife.png.meta
+guid: 8ffc1258dca016f45a1e586f40dbbda1
+=======
 guid: 5ec8ea2cd2925bb4e885aa1f6d35c402
+>>>>>>> main:Linbus/Assets/Assets/Ha/Map/Sprites/knife.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}

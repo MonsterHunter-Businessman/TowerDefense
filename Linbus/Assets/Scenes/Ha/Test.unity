@@ -152,12 +152,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce34b573a6057ae449e11486ed3ea643, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goblin: {fileID: 3566257105163151196, guid: 17efaa4a9eea2a94dbfcb9ee643f4207, type: 3}
+  goblin: {fileID: 6254976656957505730, guid: 17efaa4a9eea2a94dbfcb9ee643f4207, type: 3}
   mS: {fileID: 1684402772}
   stage: 1
   monsterB: {fileID: 0}
   parent: {fileID: 48199780}
   stageMonster: 0500000007000000090000000a000000
+  spawnInterval: 2
+  spawnCount: 5
 --- !u!4 &48199782
 Transform:
   m_ObjectHideFlags: 0

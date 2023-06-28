@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Linbus/Assets/Assets/Ha/Sprites/fireplace_1.png.meta
+guid: 21e1291de512cf14a96696817b7d87bc
+=======
 guid: a252085dfdc17ea49b60e40f9f01475b
+>>>>>>> main:Linbus/Assets/Assets/Ha/Map/Sprites/fireplace_1.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}

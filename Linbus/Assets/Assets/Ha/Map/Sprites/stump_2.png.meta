@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Linbus/Assets/Assets/Ha/Sprites/stump_2.png.meta
+guid: 20ed60454f10ce641b00c13a270041fc
+=======
 guid: 32855b368e993d549b5c3367da2fd294
+>>>>>>> main:Linbus/Assets/Assets/Ha/Map/Sprites/stump_2.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}

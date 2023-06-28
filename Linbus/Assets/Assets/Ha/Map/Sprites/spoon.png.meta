@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Linbus/Assets/Assets/Ha/Sprites/spoon.png.meta
+guid: d66d79cfcdec4dc48bbf3fc2a2dbc21a
+=======
 guid: f207c4d91bd5f7744a67e2c8196b4854
+>>>>>>> main:Linbus/Assets/Assets/Ha/Map/Sprites/spoon.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}

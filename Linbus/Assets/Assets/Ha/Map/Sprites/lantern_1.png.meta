@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Linbus/Assets/Assets/Ha/Sprites/lantern_1.png.meta
+guid: 72b97ee54c2b41e4a9f98441adebe51e
+=======
 guid: a27619158df6784429bbfb33284ff27b
+>>>>>>> main:Linbus/Assets/Assets/Ha/Map/Sprites/lantern_1.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}

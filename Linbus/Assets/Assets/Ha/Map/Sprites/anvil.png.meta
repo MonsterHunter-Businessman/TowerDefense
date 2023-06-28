@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Linbus/Assets/Assets/Ha/Sprites/anvil.png.meta
+guid: 918ac7d58662a394887184dcb61754dd
+=======
 guid: d3955871eb5b5e9468e028e0e9289b0e
+>>>>>>> main:Linbus/Assets/Assets/Ha/Map/Sprites/anvil.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}

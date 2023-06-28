@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Linbus/Assets/Assets/Ha/Sprites/mushroom_1.png.meta
+guid: ee43dac22f5417346ba6973a8f56cef5
+=======
 guid: 3c6bde2ef131c204588b9c02f0b2e944
+>>>>>>> main:Linbus/Assets/Assets/Ha/Map/Sprites/mushroom_1.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}

@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Linbus/Assets/Assets/Ha/Sprites/candle.png.meta
+guid: 1b0a0efb0fa82254984ea1daf5402bb2
+=======
 guid: bd125e65d8350b6499b8ca36a6ac3d6f
+>>>>>>> main:Linbus/Assets/Assets/Ha/Map/Sprites/candle.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}

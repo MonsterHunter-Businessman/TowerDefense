@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Linbus/Assets/Assets/Ha/Sprites/grass_2.png.meta
+guid: 32c8ad7ae84244b489bcc603b81c64d9
+=======
 guid: 6dbd32b8927f43e41b0deb2ba8e0d453
+>>>>>>> main:Linbus/Assets/Assets/Ha/Map/Sprites/grass_2.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}

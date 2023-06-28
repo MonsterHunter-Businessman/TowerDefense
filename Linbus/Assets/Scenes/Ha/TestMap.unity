@@ -4962,12 +4962,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce34b573a6057ae449e11486ed3ea643, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goblin: {fileID: 3566257105163151196, guid: 17efaa4a9eea2a94dbfcb9ee643f4207, type: 3}
+  goblin: {fileID: 6254976656957505730, guid: 17efaa4a9eea2a94dbfcb9ee643f4207, type: 3}
   mS: {fileID: 61096369}
   stage: 2
   monsterB: {fileID: 0}
   parent: {fileID: 1045174026}
   stageMonster: 0500000007000000090000000a000000
+  spawnInterval: 2
+  spawnCount: 5
 --- !u!61 &1045174028
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5689,7 +5691,7 @@ MonoBehaviour:
   m_text: "\uD0C0\uC6CC \uCCB4\uB825 :"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 31d7be2bcc8045146a5cdb8b4da4b14a, type: 2}
-  m_sharedMaterial: {fileID: -906775861655331172, guid: 31d7be2bcc8045146a5cdb8b4da4b14a, type: 2}
+  m_sharedMaterial: {fileID: -324266284412167165, guid: 31d7be2bcc8045146a5cdb8b4da4b14a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -6024,7 +6026,7 @@ MonoBehaviour:
   m_text: "\uD328\uBC30"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 31d7be2bcc8045146a5cdb8b4da4b14a, type: 2}
-  m_sharedMaterial: {fileID: -906775861655331172, guid: 31d7be2bcc8045146a5cdb8b4da4b14a, type: 2}
+  m_sharedMaterial: {fileID: -324266284412167165, guid: 31d7be2bcc8045146a5cdb8b4da4b14a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -6290,7 +6292,7 @@ MonoBehaviour:
   m_text: "\uB2E4\uC2DC\uD558\uAE30"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 31d7be2bcc8045146a5cdb8b4da4b14a, type: 2}
-  m_sharedMaterial: {fileID: -906775861655331172, guid: 31d7be2bcc8045146a5cdb8b4da4b14a, type: 2}
+  m_sharedMaterial: {fileID: -324266284412167165, guid: 31d7be2bcc8045146a5cdb8b4da4b14a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -7352,7 +7354,7 @@ MonoBehaviour:
   m_text: "\uBA54\uC778\uD654\uBA74"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 31d7be2bcc8045146a5cdb8b4da4b14a, type: 2}
-  m_sharedMaterial: {fileID: -906775861655331172, guid: 31d7be2bcc8045146a5cdb8b4da4b14a, type: 2}
+  m_sharedMaterial: {fileID: -324266284412167165, guid: 31d7be2bcc8045146a5cdb8b4da4b14a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

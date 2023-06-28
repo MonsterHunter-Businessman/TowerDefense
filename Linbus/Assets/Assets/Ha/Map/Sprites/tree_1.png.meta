@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Linbus/Assets/Assets/Ha/Sprites/tree_1.png.meta
+guid: 4dbbcc23370ec834c8100ab13497b29a
+=======
 guid: 609d050657ec42249b39f4599a4bdb86
+>>>>>>> main:Linbus/Assets/Assets/Ha/Map/Sprites/tree_1.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}

@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Linbus/Assets/Assets/Ha/Sprites/shelf.png.meta
+guid: 8f3d36d409fa073419f896aa27f99c76
+=======
 guid: 2c100ce10aa93d443bc08c857d7c0024
+>>>>>>> main:Linbus/Assets/Assets/Ha/Map/Sprites/shelf.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
