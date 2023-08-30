@@ -40,8 +40,8 @@ public class Stage : MonoBehaviour
 
                 monsterB.transform.parent = parent.transform;
 
-                monsterB.GetComponent<MonsterGoblin>().pathval = new Vector3[2];
-                monsterB.GetComponent<MonsterGoblin>().pathval = st1;
+                monsterB.GetComponent<Monster>().pathval = new Vector3[2];
+                monsterB.GetComponent<Monster>().pathval = st1;
 
                 spawnCounter++;
 
@@ -54,8 +54,8 @@ public class Stage : MonoBehaviour
 
                 monsterB.transform.parent = parent.transform;
 
-                monsterB.GetComponent<MonsterGoblin>().pathval = new Vector3[6];
-                monsterB.GetComponent<MonsterGoblin>().pathval = st2;
+                monsterB.GetComponent<Monster>().pathval = new Vector3[6];
+                monsterB.GetComponent<Monster>().pathval = st2;
 
                 spawnCounter++;
 

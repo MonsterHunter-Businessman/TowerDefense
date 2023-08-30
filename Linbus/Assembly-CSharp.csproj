@@ -62,30 +62,25 @@
     <Compile Include="Assets\Assets\Ha\2D Forest\Scripts\SpikeTrap.cs" />
     <Compile Include="Assets\Assets\Ha\2D Forest\Scripts\TimedAnimations.cs" />
     <Compile Include="Assets\Script\C#\Ha\Tuttey.cs" />
-    <Compile Include="Assets\Script\C#\Ha\MonsterGoblin.cs" />
+    <Compile Include="Assets\Script\C#\Ha\Monster.cs" />
     <Compile Include="Assets\Script\C#\Treemeew\BtnManager.cs" />
     <Compile Include="Assets\Assets\Treemeew\JSON\JSONObject.cs" />
     <Compile Include="Assets\Assets\Treemeew\JSON\VectorTemplates.cs" />
-    <Compile Include="Assets\Script\C#\Treemeew\panelManager.cs" />
     <Compile Include="Assets\Script\C#\Ha\Bullet.cs" />
     <Compile Include="Assets\Script\C#\Ha\Button.cs" />
     <Compile Include="Assets\Assets\Ha\2D Forest\Scripts\PlayerMovement.cs" />
-    <Compile Include="Assets\Script\C#\Treemeew\GameMoney.cs" />
     <Compile Include="Assets\Assets\Ha\2D Forest\Scripts\CameraFollow.cs" />
     <Compile Include="Assets\Script\C#\Treemeew\Touch_to_Start.cs" />
     <Compile Include="Assets\Assets\Ha\2D Forest\Scripts\FadeScript.cs" />
     <Compile Include="Assets\Script\C#\Treemeew\deck.cs" />
     <Compile Include="Assets\Assets\Ha\2D Forest\Scripts\Trigger.cs" />
     <Compile Include="Assets\Assets\Ha\2D Forest\Scripts\CollectableBounce.cs" />
-    <Compile Include="Assets\Script\C#\Ha\SimplePlayerController.cs" />
     <Compile Include="Assets\Assets\Ha\2D Forest\Scripts\Door.cs" />
     <Compile Include="Assets\Assets\Ha\2D Forest\Scripts\Tile.cs" />
-    <Compile Include="Assets\Script\C#\Ha\TestTowerTXT.cs" />
     <Compile Include="Assets\Script\C#\Treemeew\GameDataManager.cs" />
     <Compile Include="Assets\Script\C#\Ha\Stage.cs" />
     <Compile Include="Assets\Script\C#\Treemeew\Cards.cs" />
     <Compile Include="Assets\Assets\Ha\2D Forest\Scripts\MenuButtons.cs" />
-    <Compile Include="Assets\Script\C#\Ha\WizDemo1.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
