@@ -88,11 +88,13 @@ public class MonsterGoblin : MonoBehaviour
     }
 
 
-    void OnCollisionEnter2D(Collision2D col) {
-
-        //Debug.Log("충돌은 하나?");
+    //void OnCollisionEnter2D(Collision2D col) {
+    void OnTriggerEnter2D(Collider2D col) { 
+            
+        Debug.Log("충돌은 하나!!!!!!");
 
         if (col.gameObject.tag == "Test_Arrow") {
+            Debug.Log("아프타");
             health--;
         } else if (col.gameObject.tag == "Player_Spawn") {
             Debug.Log("들어갔당");

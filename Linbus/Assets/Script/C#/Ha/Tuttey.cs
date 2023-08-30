@@ -36,6 +36,8 @@ public class Tuttey : MonoBehaviour
 
     public GameObject TXT;
 
+    public Vector2 TowerBack;
+
 
     public int health;
 
@@ -79,6 +81,7 @@ public class Tuttey : MonoBehaviour
 
 
         if (fireCountdown <= 0f) {
+            Debug.Log("적있음");
             Shoot();
             fireCountdown = 1f / fireRate;
         }
@@ -98,6 +101,7 @@ public class Tuttey : MonoBehaviour
 
     void UpdateTarget()
     {
+        Debug.Log("적 찾는중");
         GameObject[] enemies = GameObject.FindGameObjectsWithTag("Test_Monster");
         float shortestDistance = Mathf.Infinity;
         GameObject nearestEnemy = null;
@@ -186,7 +190,7 @@ public class Tuttey : MonoBehaviour
 
 
         } else {
-            targetPostion = new Vector2(-14, -8);
+            targetPostion = TowerBack;
             yes = false;
             EAsports = new Vector3(0, 0, 0);
 
