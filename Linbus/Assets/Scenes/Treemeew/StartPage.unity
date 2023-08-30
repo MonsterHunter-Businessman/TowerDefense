@@ -220,11 +220,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44d917c5c5b81374eaafba57f62bab53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Popup: {fileID: 0}
-  Panel: {fileID: 0}
-  Currenttype: 0
-  userLv: 0
-  shopGo: {fileID: 0}
+  Currenttype: 4
+  card: {fileID: 0}
 --- !u!1 &455363919
 GameObject:
   m_ObjectHideFlags: 0
@@ -800,7 +797,7 @@ GameObject:
   - component: {fileID: 1863813441}
   - component: {fileID: 1863813442}
   m_Layer: 0
-  m_Name: "\uBAAC\uC2A4\uD130 \uD5CC\uD130 _ \uC0AC\uC5C5\uAC00 \uC6A9\uC0AC"
+  m_Name: TXT
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
