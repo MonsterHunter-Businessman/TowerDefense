@@ -6,9 +6,21 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Ha/TestMap.unity
-    guid: c73fc76b97ec4514d82466679bcd67a8
+    path: Assets/Scenes/Treemeew/StartPage.unity
+    guid: 94d5df2b477173a47b3f4a1259ac6a08
+  - enabled: 1
+    path: Assets/Scenes/Treemeew/LoadingScene.unity
+    guid: 545e3d14a78a21a46aeede97254fc5ec
+  - enabled: 1
+    path: Assets/Scenes/Treemeew/Main.unity
+    guid: abf4b3dbc516a0342bc68f6b9b31d5e0
   - enabled: 1
     path: Assets/Scenes/Ha/DragAndDrop.unity
     guid: 597532ded33d8ac4596226ab36583a9d
+  - enabled: 1
+    path: Assets/Scenes/Treemeew/ReadyScene.unity
+    guid: 2d761fa5cf60d0a47ae3ba126973bbb3
+  - enabled: 1
+    path: Assets/Scenes/Treemeew/Ingame.unity
+    guid: ba1c8ed00cc27754e8930eed0e01907e
   m_configObjects: {}

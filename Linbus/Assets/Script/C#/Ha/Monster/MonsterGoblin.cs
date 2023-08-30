@@ -35,7 +35,7 @@ public class MonsterGoblin : MonoBehaviour
 
     private Transform towerTransform;
     private bool isAttackingTower = false;
-    private float attackInterval = 5f;
+    private float attackInterval = 5f;  
     private float attackTimer = 0f;
 
     public Transform target;

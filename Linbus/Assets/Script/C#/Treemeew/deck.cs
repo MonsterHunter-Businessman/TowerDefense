@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class deck : MonoBehaviour
 {
+    char[] chars;
+    
+
     // Start is called before the first frame update
     void Start()
     {

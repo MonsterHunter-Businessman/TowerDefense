@@ -223,8 +223,7 @@ MonoBehaviour:
   Popup: {fileID: 0}
   Panel: {fileID: 0}
   Currenttype: 0
-  userLv: 0
-  shopGo: {fileID: 0}
+  card: {fileID: 0}
 --- !u!1 &455363919
 GameObject:
   m_ObjectHideFlags: 0
@@ -251,7 +250,7 @@ Transform:
   m_GameObject: {fileID: 455363919}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.0162, y: 0.0156, z: 0}
-  m_LocalScale: {x: 0.99784404, y: 0.93410593, z: 1}
+  m_LocalScale: {x: 1, y: 0.93, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}

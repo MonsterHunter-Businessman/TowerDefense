@@ -49,6 +49,7 @@ public class GameDataManager : MonoBehaviour
     void Update()
     {
         PlayerInfoLoad();
+        PlayerInfoSave();
     }
 
 }
