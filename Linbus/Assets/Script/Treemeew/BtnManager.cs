@@ -15,8 +15,8 @@ public enum Btntype
 
 public class BtnManager : MonoBehaviour
 {
-    public GameObject Popup;
-    public GameObject Panel;
+/*    public GameObject Popup;
+    public GameObject Panel;*/
     public Btntype Currenttype;
     public Cards card;
 

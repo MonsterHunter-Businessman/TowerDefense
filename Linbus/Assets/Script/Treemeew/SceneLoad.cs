@@ -9,7 +9,7 @@ using UnityEngine.SceneManagement;
 public class SceneLoad : MonoBehaviour
 {
     public Slider progresbar;
-    public Text loadtext;
+   // public Text loadtext;
     public static string Scenepath = null;
     public static void LoadScene(string Scenename)
     {
