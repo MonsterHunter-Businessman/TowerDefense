@@ -58,7 +58,6 @@
   <ItemGroup>
     <Compile Include="Assets\Script\C#\Treemeew\SceneLoad.cs" />
     <Compile Include="Assets\Script\C#\Ha\PlayerTXT.cs" />
-    <Compile Include="Assets\Script\C#\Treemeew\PlayerInfo.cs" />
     <Compile Include="Assets\Assets\Ha\2D Forest\Scripts\SpikeTrap.cs" />
     <Compile Include="Assets\Assets\Ha\2D Forest\Scripts\TimedAnimations.cs" />
     <Compile Include="Assets\Script\C#\Ha\Tuttey.cs" />
