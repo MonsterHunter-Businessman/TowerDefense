@@ -25,7 +25,6 @@ public class Cards : MonoBehaviour
     public string CardNametxt;
     public string CardInfo;
     Button Button;
-    public static int CardPrice;
     public GameObject CardImage;
     public int[] hasCard; // 수정된 부분: 배열을 bool 타입으로 변경
 
@@ -70,28 +69,24 @@ public class Cards : MonoBehaviour
                 CardNametxt = "사제";
                 CardInfo = " 10초마다 아군의 체력을 5회복 합니다.적을 단일 공격합니다.";
                 CardImage.GetComponent<Image>().sprite = Resources.Load<Sprite>("Img/Treemeew/nun");
-                CardPrice = 200;
                 CardDmg = 7;
                 break;
             case TowerCards.assassin:
                 CardNametxt = "암살자";
                 CardInfo = " 상대에게 공격을 받지 않습니다.적을 단일 공격합니다";
                 CardImage.GetComponent<Image>().sprite = Resources.Load<Sprite>("Img/Treemeew/assassin");
-                CardPrice = 100;
                 CardDmg = 15;
                 break;
             case TowerCards.spear:
                 CardNametxt = "창병";
                 CardInfo = "상대의 어그로를 우선으로 먹습니다.적을 단일 공격합니다.";
                 CardImage.GetComponent<Image>().sprite = Resources.Load<Sprite>("Img/Treemeew/spear");
-                CardPrice = 500;
                 CardDmg = 10;
                 break;
             case TowerCards.berserker:
                 CardNametxt = "광전사";
                 CardInfo = "상대의 어그로를 우선으로 먹습니다.적을 단일 공격합니다.";
                 CardImage.GetComponent<Image>().sprite = Resources.Load<Sprite>("Img/Treemeew/berserker");
-                CardPrice = 200;
                 break;
         }
   

@@ -10,9 +10,6 @@ public enum Btntype
     Start,
     Quit,
     accept,
-    Buy,
-    CardUp,
-    CardDown,
     SaveInfo
 }
 
@@ -42,17 +39,7 @@ public class BtnManager : MonoBehaviour
             SceneLoad.LoadScene("Main");
         }
 
-        // card 변수가 null이면 처리 중지
-        if (card == null)
-            return;
-
-        // 보유 중인 카드를 보고 있다면 Panel 활성화
-        bool hasCard = card.hasCard[card.CardIndex] > 0;
-        Panel.SetActive(hasCard);
-        if (Panel.activeSelf == true)
-        {
-            Popup.SetActive(false);
-        }
+       
     }
 
     public void OnBtnClick()
@@ -73,44 +60,6 @@ public class BtnManager : MonoBehaviour
                 break;
 
             case Btntype.accept:
-                break;
-
-            case Btntype.Buy:
-
-                if (GameDataManager.Instance.GameMoney < Cards.CardPrice)
-                {
-                    Popup.SetActive(true);
-                    Debug.Log("돈이 부족하여 구매할 수 없습니다.");
-                }
-                else if (card.hasCard[card.CardIndex] ==0)
-                {
-                    Debug.Log("구매 성공");
-                    GameDataManager.Instance.GameMoney -= Cards.CardPrice;
-                    Debug.Log(card.CardIndex);
-                    card.hasCard[card.CardIndex] += 1;
-                    Debug.Log(card.CardNametxt + " 카드를 구매했습니다.");
-                }
-                else if(card.hasCard[card.CardIndex] == 1)
-                {
-                    Debug.Log(card.CardNametxt + " 카드를 이미 보유 중입니다.");
-                }
-                break;
-
-            case Btntype.CardUp:
-                if (card.CardIndex + 1 >= 15)
-                {
-                    return;
-                }
-                Panel.SetActive(false);
-                card.CardIndex++;
-                break;
-
-            case Btntype.CardDown:
-                if (card.CardIndex - 1 <= 0)
-                {
-                    return;
-                }
-                card.CardIndex--;
                 break;
             case Btntype.SaveInfo:
                 GameDataManager.Instance.PlayerInfoSave();
